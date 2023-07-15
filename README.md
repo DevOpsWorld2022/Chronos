@@ -1,5 +1,7 @@
 # scaler
 // TODO(user): Add simple overview of use/purpose
+![image](https://github.com/DevOpsWorld2022/Chronos/assets/96952007/134c754d-5809-4c8f-8c02-b65f74ede775)
+
 
 ## Description
 // TODO(user): An in-depth paragraph about your project and overview of use
