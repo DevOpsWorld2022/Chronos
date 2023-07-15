@@ -1,0 +1,21 @@
+apiVersion: api.zeta.in/v1alpha1
+kind: Scaler
+metadata:
+  labels:
+    app.kubernetes.io/name: scaler
+    app.kubernetes.io/instance: scaler-sample
+    app.kubernetes.io/part-of: scaler
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: scaler
+  name: scaler-sample
+spec:
+  start: 4:08:00
+  stop: 5:08:00
+  deployment: 
+    - name: nginx
+      namespace: default
+      replica: 2
+
+
+
+  # TODO(user): Add fields here

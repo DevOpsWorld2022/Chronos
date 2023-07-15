@@ -1,0 +1,28 @@
+apiVersion: api.zeta.in/v1alpha1
+kind: Scaler
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"api.zeta.in/v1alpha1","kind":"Scaler","metadata":{"annotations":{},"labels":{"app.kubernetes.io/created-by":"scaler","app.kubernetes.io/instance":"scaler-sample","app.kubernetes.io/managed-by":"kustomize","app.kubernetes.io/name":"scaler","app.kubernetes.io/part-of":"scaler"},"name":"scaler-sample","namespace":"default"},"spec":{"deployment":[{"name":"nginx","namespace":"default","replica":2}],"start":"4:08:00","stop":"5:08:00"}}
+  creationTimestamp: "2023-07-15T16:13:59Z"
+  generation: 31
+  labels:
+    app.kubernetes.io/created-by: scaler
+    app.kubernetes.io/instance: scaler-sample
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: scaler
+    app.kubernetes.io/part-of: scaler
+  name: scaler-sample
+  namespace: default
+  resourceVersion: "42043574"
+  uid: 74fdc8f0-fd64-4177-a04d-e14a7bbaa2b9
+spec:
+  deployment:
+  - name: redpanda
+    namespace: default
+    replica: 4
+  start: "16:08:00"
+  stop: "16:50:00"
+status:
+  originalreplica: 2
+  status: Success
