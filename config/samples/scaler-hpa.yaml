@@ -1,0 +1,23 @@
+apiVersion: api.zeta.in/v1alpha1
+kind: Scaler
+metadata:
+  annotations:
+  labels:
+    app.kubernetes.io/created-by: scaler
+    app.kubernetes.io/instance: scaler-sample
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: scaler
+    app.kubernetes.io/part-of: scaler
+  name: scaler-sample
+  namespace: default
+spec:
+  hpa:
+  - name: redpanda
+    namespace: default
+    minreplica: 4
+    maxreplica: 5
+  start: "16:08:00"
+  stop: "16:50:00"
+status:
+  originalreplica: 2
+  status: Success
